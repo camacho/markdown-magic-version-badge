@@ -33,5 +33,11 @@ markdownMagic(markdownPath, config);
 ## Usage in markdown
 
 <!-- AUTO-GENERATED-CONTENT:START (VERSIONBADGE) -->
-[![npm](https://img.shields.io/badge/npm-v1.0.0-green.svg)](https://npmjs.org/markdown-magic-version-badge)
+[![npm](https://img.shields.io/badge/npm-v1.1.0-green.svg)](https://www.npmjs.com/package/markdown-magic-version-badge)
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## Options
+* **pkg** (nearest `package.json` file in file tree from the README by default) - path to closest pkg
+* **link** (links to npm by default) - a URL to link the button to (set to `false` to prevent link)
+* **prefix** (`npm` by default) - the prefix for the badge
+* **color** (`green` by default or `orange` if pre-release version) - any [supported color](http://shields.io/#your-badge)
