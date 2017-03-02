@@ -1,0 +1,23 @@
+{
+  "name": "markdown-magic-version-badge",
+  "version": "1.0.0",
+  "description": "Version badge via Markdown Magic",
+  "main": "index.js",
+  "scripts": {
+    "docs": "node example.js",
+    "prepublish": "npm run docs"
+  },
+  "keywords": [
+    "markdown-magic",
+    "version Badge",
+    "plugin"
+  ],
+  "author": "Patrick Camacho <patrick@daftdevelopers.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "markdown-magic": "^0.1.13"
+  },
+  "dependencies": {
+    "findup": "^0.1.5"
+  }
+}
