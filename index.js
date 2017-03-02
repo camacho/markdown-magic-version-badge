@@ -3,6 +3,13 @@ const path = require('path');
 const findup = require('findup');
 const semver = require('semver');
 
+function encode(value) {
+  return value
+    .replace(/-/g, '--')
+    .replace(/_/g, '__')
+    .replace(/ /g, '_');
+}
+
 function findPkg(dir) {
   try {
     return path.join(findup.sync(dir, 'package.json'), 'package.json');
@@ -41,16 +48,11 @@ function renderBadge(prefix, name, version, _color) {
     color = 'green';
   }
 
-  const urlVersion = version
-    .replace(/-/g, '--')
-    .replace(/_/g, '__')
-    .replace(/ /g, '_');
-
   const url = [
     prefix,
-    `v${urlVersion}`,
+    `v${version}`,
     color
-  ].join('-').concat('.svg');
+  ].map(encode).join('-').concat('.svg');
 
   const img = `https://img.shields.io/badge/${url}`;
   return `![${prefix}](${img})`;
