@@ -1,6 +1,6 @@
 {
   "name": "markdown-magic-version-badge",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Version badge via Markdown Magic",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "Patrick Camacho <patrick@daftdevelopers.com>",
   "license": "MIT",
   "devDependencies": {
-    "markdown-magic": "^0.1.13"
+    "markdown-magic": ">=0.1 <=2.x"
   },
   "dependencies": {
     "findup": "^0.1.5",
