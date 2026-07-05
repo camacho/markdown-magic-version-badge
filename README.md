@@ -1,3 +1,5 @@
+> **📦 This package has moved.** It now lives in the [markdown-magic-plugins](https://github.com/camacho/markdown-magic-plugins) monorepo at [`packages/version-badge`](https://github.com/camacho/markdown-magic-plugins/tree/main/packages/version-badge). This repository is archived; issues and contributions go to the monorepo.
+
 # Version badge plugin
 
 Add version badge to markdown files via [markdown-magic](https://github.com/DavidWells/markdown-magic)
